@@ -7,10 +7,8 @@ import { fileURLToPath } from "url";
 import path, { dirname } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
-console.log("__filename", __filename);
 
 const __dirname = dirname(__filename);
-console.log("__dirname", __dirname);
 
 const sharedNodeOptions = defineConfig({
   output: {
@@ -29,7 +27,10 @@ const envConfig = defineConfig({
 
 const nodeConfig = defineConfig({
   ...sharedNodeOptions,
-  input: path.resolve(__dirname, "src/node/index.ts"),
+  input: {
+    index: path.resolve(__dirname, "src/node/index.ts"),
+    cli: path.resolve(__dirname, "src/node/cli.ts"),
+  },
 });
 
 export default defineConfig([envConfig, nodeConfig]);

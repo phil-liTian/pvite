@@ -1,4 +1,7 @@
-//#region src/node/index.ts
-console.log("node");
+//#region src/node/config.ts
+function defineConfig(config) {
+	return config;
+}
 
 //#endregion
+export { defineConfig };

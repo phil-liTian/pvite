@@ -1,1 +1,1 @@
-console.log("node");
+export { defineConfig } from "./config";
