@@ -1,0 +1,19 @@
+{
+  "name": "@pvite/vite-menorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r --filter='./packages/*' run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pvite/vite-menorepo": "link:",
+    "cac": "^6.7.14",
+    "create-vite": "link:packages/create-vite",
+    "pvite": "workspace:*",
+    "rollup": "4.43.0"
+  }
+}

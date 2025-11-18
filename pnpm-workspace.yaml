@@ -1,0 +1,6 @@
+packages:
+  - packages/*
+  - playground/**
+overrides:
+  '@pvite/vite-menorepo': 'link:'
+  create-vite: link:packages/create-vite

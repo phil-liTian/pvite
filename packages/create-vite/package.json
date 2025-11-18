@@ -1,0 +1,26 @@
+{
+  "name": "create-pvite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-pvite": "index.js"
+  },
+  "scripts": {
+    "start": "pnpm run build && node index.js --template vue1",
+    "build": "tsdown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "mri": "^1.2.0",
+    "picocolors": "^1.1.1",
+    "tsdown": "^0.16.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25"
+  }
+}

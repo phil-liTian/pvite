@@ -1,0 +1,6 @@
+{
+  "name": "@pvite/test-cli",
+  "scripts": {
+    "dev": "pvite"
+  }
+}
